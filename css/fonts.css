@@ -1,0 +1,35 @@
+/* Adobe Fonts — assets/type/typekit.css */
+@import url("../assets/type/typekit.css");
+
+/* Times Dot — assets/type/ */
+@font-face {
+  font-family: "Times Dot";
+  src: url("../assets/type/TimesDotRom.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Times Dot";
+  src: url("../assets/type/TimesDotBol.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Times Dot";
+  src: url("../assets/type/TimesDot-Italic.otf") format("opentype");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Times Dot";
+  src: url("../assets/type/TimesDotBol.otf") format("opentype");
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}

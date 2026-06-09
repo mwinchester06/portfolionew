@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio — Mia Winchester</title>
+  <link rel="stylesheet" href="css/fonts.css" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body class="page-home">
+  <div class="liquid" aria-hidden="true"></div>
+
+  <header class="pill-bar pill-bar--simple" aria-label="Primary">
+    <nav class="pill-bar__center" aria-label="Sections">
+      <a href="#home" class="pill is-active">Home</a>
+      <div class="pill-dropdown">
+        <button
+          type="button"
+          class="pill pill-dropdown__toggle"
+          aria-expanded="false"
+          aria-haspopup="true"
+          aria-controls="projects-menu"
+        >
+          Projects
+        </button>
+        <ul id="projects-menu" class="pill-dropdown__menu" role="menu" hidden></ul>
+      </div>
+      <a href="#contact" class="pill">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="ispy" aria-label="Portfolio cover">
+      <div class="ispy__scene">
+        <div class="ispy__panel">
+          <h1 class="ispy__title">Portfolio</h1>
+
+          <a href="webzine.html" class="ispy-item ispy-item--back ispy-item--1" style="--rot: -12deg">
+            <img src="assets/ispy/fug.png?v=2" alt="" class="ispy-item__nobg" />
+          </a>
+
+          <a href="pamphlets.html" class="ispy-item ispy-item--front ispy-item--2" style="--rot: 10deg">
+            <img src="assets/ispy/paperball.png?v=2" alt="" class="ispy-item__nobg" />
+          </a>
+
+          <a href="poptart.html" class="ispy-item ispy-item--front ispy-item--3" style="--rot: -8deg">
+            <img src="assets/ispy/poptart.png" alt="" class="ispy-item__nobg" />
+          </a>
+
+          <a href="top10.html" class="ispy-item ispy-item--front ispy-item--4" style="--rot: 6deg">
+            <img src="assets/ispy/cat.png" alt="" class="ispy-item__nobg" />
+          </a>
+
+          <a href="collectors.html" class="ispy-item ispy-item--front ispy-item--5" style="--rot: 14deg">
+            <img src="assets/ispy/bird.png?v=5" alt="" class="ispy-item__nobg" />
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="panel panel--about">
+      <div class="about">
+        <figure class="about__photo about__photo--mia">
+          <img src="assets/mialittle.png" alt="Mia Winchester" loading="lazy" />
+        </figure>
+        <div class="about__text about__text--scatter">
+          <h2 class="about__name">Mia Winchester</h2>
+          <p class="about__scatter-line">
+            <span style="--mr: 0.6em">graphic design student</span>
+            <span style="--mr: 2.4em">@</span>
+            <span>the university of tennessee</span>
+          </p>
+          <p class="about__scatter-line">
+            <span style="--mr: 0.7em">I work</span>
+            <span style="--mr: 3.4em">with type,</span>
+            <span style="--mr: 1.6em">texture,</span>
+            <span style="--mr: 2.9em">and color —</span>
+            <span style="--mr: 1.2em">between</span>
+            <span>editorial,</span>
+          </p>
+          <p class="about__scatter-line about__scatter-line--indent">
+            <span style="--mr: 2.1em">branding,</span>
+            <span style="--mr: 1.4em">and</span>
+            <span style="--mr: 3.5em">experimental</span>
+            <span>web.</span>
+          </p>
+          <p class="about__scatter-line about__scatter-line--indent">
+            <span style="--mr: 0.8em">Studying</span>
+            <span style="--mr: 2.8em">graphic design.</span>
+            <span style="--mr: 2em">Open to</span>
+            <span>freelance and collaborations.</span>
+          </p>
+        </div>
+        <figure class="about__photo about__photo--pigeon">
+          <img src="assets/babypidgeon.png" alt="" loading="lazy" />
+        </figure>
+      </div>
+    </section>
+
+    <section id="contact" class="panel panel--contact">
+      <h2>Contact</h2>
+      <p class="panel__lede">Internships, freelance, and collaborations.</p>
+      <form class="contact__form" action="#" method="post">
+        <label><span>Name</span><input type="text" name="name" required /></label>
+        <label><span>Email</span><input type="email" name="email" required /></label>
+        <label><span>Message</span><textarea name="message" rows="4" required></textarea></label>
+        <button type="submit" class="btn-submit">Send</button>
+      </form>
+      <footer class="panel__foot">
+        <a href="https://instagram.com/mia.dsgn" target="_blank" rel="noopener noreferrer">@mia.dsgn</a>
+        <a href="mailto:mia.winchester.06@gmail.com">mia.winchester.06@gmail.com</a>
+        <span>© 2026</span>
+      </footer>
+    </section>
+  </main>
+
+  <script src="js/nav.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/ispy.js"></script>
+</body>
+</html>

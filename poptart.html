@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Poptart Typology — Mia Winchester</title>
+  <link rel="stylesheet" href="css/fonts.css" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body class="case-page">
+  <div class="liquid" aria-hidden="true"></div>
+
+  <header class="pill-bar pill-bar--simple" aria-label="Primary">
+    <nav class="pill-bar__center" aria-label="Sections">
+      <a href="index.html" class="pill">Home</a>
+      <div class="pill-dropdown">
+        <button
+          type="button"
+          class="pill pill-dropdown__toggle"
+          aria-expanded="false"
+          aria-haspopup="true"
+          aria-controls="projects-menu"
+        >
+          Projects
+        </button>
+        <ul id="projects-menu" class="pill-dropdown__menu" role="menu" hidden></ul>
+      </div>
+      <a href="index.html#contact" class="pill">Contact</a>
+    </nav>
+  </header>
+
+  <main class="case">
+    <div class="case__top">
+      <a href="index.html" class="case__back">← Back</a>
+      <div class="case__mast">
+        <div class="case__intro">
+          <p class="case__tag">Photography</p>
+          <h1 class="case__title">poptart typology</h1>
+        </div>
+        <div class="case__lede-block">
+          <p class="case__lede">
+            typology project where we had the option to pick an item that had 25 different variants to photograph. i chose 5 kinds of poptarts and had 25 different people take bites so not only are the poptarts unique, but also the teeth marks in them.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <figure class="case__hero case__hero--compact">
+      <img
+        src="assets/poptart/poptart.gif?v=3"
+        alt="Pop-Tart typology animation"
+        loading="eager"
+      />
+    </figure>
+
+    <div class="case__layout case__layout--solo">
+      <div class="case__main">
+        <section class="poptart-slider" aria-label="Typology grid iterations">
+          <div class="poptart-slider__tabs" role="tablist" aria-label="Grid versions">
+            <button
+              type="button"
+              class="poptart-slider__tab is-active"
+              role="tab"
+              id="poptart-tab-0"
+              aria-selected="true"
+              aria-controls="poptart-panel-0"
+              data-index="0"
+            >
+              01 · first rendition
+            </button>
+            <button
+              type="button"
+              class="poptart-slider__tab"
+              role="tab"
+              id="poptart-tab-1"
+              aria-selected="false"
+              aria-controls="poptart-panel-1"
+              data-index="1"
+              tabindex="-1"
+            >
+              02 · final chart
+            </button>
+          </div>
+
+          <div class="poptart-slider__viewport">
+            <figure
+              class="poptart-slider__slide is-active"
+              role="tabpanel"
+              id="poptart-panel-0"
+              aria-labelledby="poptart-tab-0"
+            >
+              <p class="poptart-slider__caption">early layout of the typology grid</p>
+              <div class="poptart-slider__frame">
+                <img
+                  src="assets/poptart/poptart-grid-early.png?v=2"
+                  alt="First rendition of the Pop-Tart typology grid"
+                  loading="lazy"
+                />
+              </div>
+            </figure>
+
+            <figure
+              class="poptart-slider__slide"
+              role="tabpanel"
+              id="poptart-panel-1"
+              aria-labelledby="poptart-tab-1"
+              hidden
+            >
+              <div class="poptart-slider__frame">
+                <img
+                  src="assets/poptart/poptart-grid.png?v=2"
+                  alt="Pop-Tart typology grid — flavors and bite patterns"
+                  width="3200"
+                  height="3200"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+            </figure>
+          </div>
+
+          <div class="poptart-slider__nav">
+            <button type="button" class="poptart-slider__arrow" data-dir="prev" aria-label="Previous slide">
+              ←
+            </button>
+            <span class="poptart-slider__count" aria-live="polite">1 / 2</span>
+            <button type="button" class="poptart-slider__arrow" data-dir="next" aria-label="Next slide">
+              →
+            </button>
+          </div>
+        </section>
+      </div>
+    </div>
+  </main>
+  <script src="js/nav.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/poptart.js"></script>
+</body>
+</html>
