@@ -2837,20 +2837,22 @@ body.page-home .about__text--scatter .about__name {
   line-height: 1.15;
 }
 
-body.page-home .about__tagline {
+body.page-home .about__text--scatter .about__tagline {
   margin: 0 0 0.85rem;
   font-family: var(--font);
   font-size: clamp(0.82rem, 2.1vw, 0.98rem);
   line-height: 1.5;
-  color: var(--accent-olive);
+  color: var(--accent-olive, #8f8b3f);
+  opacity: 1;
 }
 
-body.page-home .about__bio {
+body.page-home .about__text--scatter .about__bio {
   margin: 0 0 0.55rem;
   font-family: var(--font);
   font-size: clamp(0.82rem, 2.1vw, 0.98rem);
   line-height: 1.65;
   color: #111;
+  opacity: 1;
   max-width: 34rem;
 }
 
