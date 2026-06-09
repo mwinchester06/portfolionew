@@ -2795,9 +2795,18 @@ body.page-home .panel {
 }
 
 body.page-home .panel--about .about {
-  grid-template-columns: minmax(140px, 200px) 1fr minmax(140px, 200px);
-  gap: 1.4rem;
-  align-items: start;
+  grid-template-columns: minmax(0, 11rem) minmax(0, 1fr) minmax(0, 11rem);
+  gap: clamp(1rem, 2.5vw, 1.75rem);
+  align-items: center;
+}
+
+body.page-home .panel--about .about > * {
+  min-width: 0;
+}
+
+body.page-home .about__photo picture {
+  display: block;
+  width: 100%;
 }
 
 body.page-home .panel__head {
@@ -2819,23 +2828,23 @@ body.page-home .about__text--scatter {
 
 body.page-home .about__text--scatter .about__name {
   margin-bottom: 0.85rem;
+  font-size: clamp(1.35rem, 3.5vw, 1.75rem);
+  line-height: 1.15;
 }
 
 body.page-home .about__scatter-line {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: baseline;
-  margin: 0 0 0.55rem;
+  margin: 0 0 0.65rem;
   font-family: var(--font);
   font-style: normal;
   font-size: clamp(0.82rem, 2.1vw, 0.98rem);
-  line-height: 1.55;
+  line-height: 1.65;
   color: #111;
   opacity: 1;
 }
 
 body.page-home .about__scatter-line span {
-  margin-right: var(--mr, 1rem);
+  display: inline;
+  margin-right: var(--mr, 0.35em);
 }
 
 body.page-home .about__scatter-line--indent {
@@ -2853,6 +2862,10 @@ body.page-home .panel--contact .panel__lede {
 
 body.page-home .about__photo {
   border-color: rgba(143, 139, 63, 0.35);
+}
+
+body.page-home .about__photo img {
+  max-height: min(22rem, 52vh);
 }
 
 body.page-home .about__photo--mia img {
