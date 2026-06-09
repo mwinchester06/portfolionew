@@ -1,0 +1,5 @@
+# Photoshop source files — too large for GitHub; use exported PNG/JPG instead
+*.psd
+
+# macOS
+.DS_Store
