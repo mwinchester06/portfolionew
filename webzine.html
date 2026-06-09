@@ -6,6 +6,7 @@
   <title>Trinket Shelf — Mia Winchester</title>
   <link rel="stylesheet" href="css/fonts.css" />
   <link rel="stylesheet" href="css/styles.css" />
+  <link rel="preload" as="image" href="assets/images/newtree.jpg" fetchpriority="high" />
 </head>
 <body class="case-page">
   <div class="liquid" aria-hidden="true"></div>
@@ -56,13 +57,15 @@
     <figure class="case__hero case__hero--bleed">
       <video
         class="case__hero-video"
-        src="assets/webzine/webzineupdown.mov"
         autoplay
         loop
         muted
         playsinline
+        preload="metadata"
         aria-label="Trinket Shelf screen recording"
-      ></video>
+      >
+        <source src="assets/webzine/webzineupdown.mp4" type="video/mp4" />
+      </video>
     </figure>
 
     <div class="case__layout case__layout--solo">
@@ -75,42 +78,42 @@
             <div class="case__trinket-belt__track">
               <div class="case__trinket-belt__set">
                 <figure class="case__trinket-belt__item">
-                  <img src="assets/webzine/smiskiguy.png" alt="" loading="eager" />
+                  <img src="assets/webzine/smiskiguy.png" alt="" loading="lazy" decoding="async" />
                 </figure>
                 <figure class="case__trinket-belt__item">
-                  <img src="assets/webzine/fuggler.png" alt="" loading="eager" />
+                  <img src="assets/webzine/fuggler.png" alt="" loading="lazy" decoding="async" />
                 </figure>
                 <figure class="case__trinket-belt__item">
-                  <img src="assets/webzine/shrimpcat.png" alt="" loading="eager" />
+                  <img src="assets/webzine/shrimpcat.png" alt="" loading="lazy" decoding="async" />
                 </figure>
                 <figure class="case__trinket-belt__item">
-                  <img src="assets/webzine/peachriot.png" alt="" loading="eager" />
+                  <img src="assets/webzine/peachriot.png" alt="" loading="lazy" decoding="async" />
                 </figure>
                 <figure class="case__trinket-belt__item">
-                  <img src="assets/webzine/pug.png" alt="" loading="eager" />
+                  <img src="assets/webzine/pug.png" alt="" loading="lazy" decoding="async" />
                 </figure>
                 <figure class="case__trinket-belt__item">
-                  <img src="assets/webzine/sylveon.png" alt="" loading="eager" />
+                  <img src="assets/webzine/sylveon.png" alt="" loading="lazy" decoding="async" />
                 </figure>
               </div>
               <div class="case__trinket-belt__set" aria-hidden="true">
                 <figure class="case__trinket-belt__item">
-                  <img src="assets/webzine/smiskiguy.png" alt="" loading="eager" />
+                  <img src="assets/webzine/smiskiguy.png" alt="" loading="lazy" decoding="async" />
                 </figure>
                 <figure class="case__trinket-belt__item">
-                  <img src="assets/webzine/fuggler.png" alt="" loading="eager" />
+                  <img src="assets/webzine/fuggler.png" alt="" loading="lazy" decoding="async" />
                 </figure>
                 <figure class="case__trinket-belt__item">
-                  <img src="assets/webzine/shrimpcat.png" alt="" loading="eager" />
+                  <img src="assets/webzine/shrimpcat.png" alt="" loading="lazy" decoding="async" />
                 </figure>
                 <figure class="case__trinket-belt__item">
-                  <img src="assets/webzine/peachriot.png" alt="" loading="eager" />
+                  <img src="assets/webzine/peachriot.png" alt="" loading="lazy" decoding="async" />
                 </figure>
                 <figure class="case__trinket-belt__item">
-                  <img src="assets/webzine/pug.png" alt="" loading="eager" />
+                  <img src="assets/webzine/pug.png" alt="" loading="lazy" decoding="async" />
                 </figure>
                 <figure class="case__trinket-belt__item">
-                  <img src="assets/webzine/sylveon.png" alt="" loading="eager" />
+                  <img src="assets/webzine/sylveon.png" alt="" loading="lazy" decoding="async" />
                 </figure>
               </div>
             </div>
@@ -129,22 +132,22 @@
             <div class="case__vhs-screen">
               <div class="case__vhs-viewport">
                 <figure class="case__vhs-frame is-active">
-                  <img src="assets/webzine/level1.png" alt="Trinket Shelf level 1" loading="eager" />
+                  <img src="assets/webzine/level1.webp" alt="Trinket Shelf level 1" loading="lazy" decoding="async" />
                 </figure>
                 <figure class="case__vhs-frame">
-                  <img src="assets/webzine/level2.png" alt="Trinket Shelf level 2" loading="lazy" />
+                  <img src="assets/webzine/level2.webp" alt="Trinket Shelf level 2" loading="lazy" decoding="async" />
                 </figure>
                 <figure class="case__vhs-frame">
-                  <img src="assets/webzine/level3.png" alt="Trinket Shelf level 3" loading="lazy" />
+                  <img src="assets/webzine/level3.webp" alt="Trinket Shelf level 3" loading="lazy" decoding="async" />
                 </figure>
                 <figure class="case__vhs-frame">
-                  <img src="assets/webzine/level4.png" alt="Trinket Shelf level 4" loading="lazy" />
+                  <img src="assets/webzine/level4.webp" alt="Trinket Shelf level 4" loading="lazy" decoding="async" />
                 </figure>
                 <figure class="case__vhs-frame">
-                  <img src="assets/webzine/level5.png" alt="Trinket Shelf level 5" loading="lazy" />
+                  <img src="assets/webzine/level5.webp" alt="Trinket Shelf level 5" loading="lazy" decoding="async" />
                 </figure>
                 <figure class="case__vhs-frame">
-                  <img src="assets/webzine/level6.png" alt="Trinket Shelf level 6" loading="lazy" />
+                  <img src="assets/webzine/level6.webp" alt="Trinket Shelf level 6" loading="lazy" decoding="async" />
                 </figure>
               </div>
               <div class="case__vhs-noise" aria-hidden="true"></div>
@@ -158,8 +161,8 @@
       </div>
     </div>
   </main>
-  <script src="js/nav.js"></script>
-  <script src="js/main.js"></script>
-  <script src="js/webzine.js"></script>
+  <script src="js/nav.js" defer></script>
+  <script src="js/main.js" defer></script>
+  <script src="js/webzine.js" defer></script>
 </body>
 </html>

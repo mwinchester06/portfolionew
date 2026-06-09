@@ -1,5 +1,5 @@
 Hero screen recording:
-  webzineupdown.mov
+  webzineupdown.mp4
 
 Meet the trinkets (conveyor belt):
   smiskiguy.png, fuggler.png, shrimpcat.png, peachriot.png, pug.png, sylveon.png

@@ -6,6 +6,7 @@
   <title>Portfolio — Mia Winchester</title>
   <link rel="stylesheet" href="css/fonts.css" />
   <link rel="stylesheet" href="css/styles.css" />
+  <link rel="preload" as="image" href="assets/images/newtree.jpg" fetchpriority="high" />
 </head>
 <body class="page-home">
   <div class="liquid" aria-hidden="true"></div>
@@ -36,23 +37,23 @@
           <h1 class="ispy__title">Portfolio</h1>
 
           <a href="webzine.html" class="ispy-item ispy-item--back ispy-item--1" style="--rot: -12deg">
-            <img src="assets/ispy/fug.png?v=2" alt="" class="ispy-item__nobg" />
+            <img src="assets/ispy/fug.png?v=2" alt="" class="ispy-item__nobg" decoding="async" />
           </a>
 
           <a href="pamphlets.html" class="ispy-item ispy-item--front ispy-item--2" style="--rot: 10deg">
-            <img src="assets/ispy/paperball.png?v=2" alt="" class="ispy-item__nobg" />
+            <img src="assets/ispy/paperball.png?v=2" alt="" class="ispy-item__nobg" decoding="async" />
           </a>
 
           <a href="poptart.html" class="ispy-item ispy-item--front ispy-item--3" style="--rot: -8deg">
-            <img src="assets/ispy/poptart.png" alt="" class="ispy-item__nobg" />
+            <img src="assets/ispy/poptart.png" alt="" class="ispy-item__nobg" decoding="async" />
           </a>
 
           <a href="top10.html" class="ispy-item ispy-item--front ispy-item--4" style="--rot: 6deg">
-            <img src="assets/ispy/cat.png" alt="" class="ispy-item__nobg" />
+            <img src="assets/ispy/cat.png" alt="" class="ispy-item__nobg" decoding="async" />
           </a>
 
           <a href="collectors.html" class="ispy-item ispy-item--front ispy-item--5" style="--rot: 14deg">
-            <img src="assets/ispy/bird.png?v=5" alt="" class="ispy-item__nobg" />
+            <img src="assets/ispy/bird.png?v=5" alt="" class="ispy-item__nobg" decoding="async" />
           </a>
         </div>
       </div>
@@ -61,7 +62,7 @@
     <section id="about" class="panel panel--about">
       <div class="about">
         <figure class="about__photo about__photo--mia">
-          <img src="assets/mialittle.png" alt="Mia Winchester" loading="lazy" />
+          <img src="assets/mialittle.webp" alt="Mia Winchester" loading="lazy" decoding="async" />
         </figure>
         <div class="about__text about__text--scatter">
           <h2 class="about__name">Mia Winchester</h2>
@@ -92,7 +93,7 @@
           </p>
         </div>
         <figure class="about__photo about__photo--pigeon">
-          <img src="assets/babypidgeon.png" alt="" loading="lazy" />
+          <img src="assets/babypidgeon.webp" alt="" loading="lazy" decoding="async" />
         </figure>
       </div>
     </section>
@@ -114,8 +115,8 @@
     </section>
   </main>
 
-  <script src="js/nav.js"></script>
-  <script src="js/main.js"></script>
-  <script src="js/ispy.js"></script>
+  <script src="js/nav.js" defer></script>
+  <script src="js/main.js" defer></script>
+  <script src="js/ispy.js" defer></script>
 </body>
 </html>

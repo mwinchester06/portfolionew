@@ -3,3 +3,12 @@
 
 # macOS
 .DS_Store
+
+# Local asset backups from compression
+.asset-backups/
+
+# Heavy originals — compressed versions are used on the site
+assets/images/newtree.png
+assets/webzine/webzineupdown.mov
+newspaperwork1.gif
+babybabyyhy.png

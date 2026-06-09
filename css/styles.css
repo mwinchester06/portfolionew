@@ -2527,16 +2527,16 @@ body.case-page {
 }
 
 .liquid {
-  background: url("../assets/images/newtree.png") center center / cover no-repeat;
+  background: url("../assets/images/newtree.jpg") center center / cover no-repeat;
   animation: none;
 }
 
 body.page-home .liquid {
-  background: url("../assets/images/newtree.png") center 42% / cover no-repeat;
+  background: url("../assets/images/newtree.jpg") center 42% / cover no-repeat;
 }
 
 body.case-page .liquid {
-  background: url("../assets/images/newtree.png") center 42% / cover no-repeat;
+  background: url("../assets/images/newtree.jpg") center 42% / cover no-repeat;
 }
 
 body.page-home {

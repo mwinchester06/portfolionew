@@ -6,6 +6,7 @@
   <title>Collectors Edition — Mia Winchester</title>
   <link rel="stylesheet" href="css/fonts.css" />
   <link rel="stylesheet" href="css/styles.css" />
+  <link rel="preload" as="image" href="assets/images/newtree.jpg" fetchpriority="high" />
 </head>
 <body class="case-page">
   <div class="liquid" aria-hidden="true"></div>
@@ -66,7 +67,7 @@
             <div class="collectors-mockups-stage__col">
               <div class="collectors-mockups-stage__frame">
                 <img
-                  src="assets/collectors/mockups/cover.png"
+                  src="assets/collectors/mockups/cover.webp"
                   alt="Collectors Edition magazine cover mockup on grass"
                   width="985"
                   height="1024"
@@ -88,7 +89,7 @@
                 >
                   <div class="collectors-mockups-stage__frame">
                     <img
-                      src="assets/collectors/mockups/spread-industry-culture.png"
+                      src="assets/collectors/mockups/spread-industry-culture.webp"
                       alt="Industry and Culture spread mockup"
                       width="1024"
                       height="758"
@@ -105,7 +106,7 @@
                 >
                   <div class="collectors-mockups-stage__frame">
                     <img
-                      src="assets/collectors/mockups/spread-display.png"
+                      src="assets/collectors/mockups/spread-display.webp"
                       alt="Display section spread mockup"
                       width="890"
                       height="1024"
@@ -122,7 +123,7 @@
                 >
                   <div class="collectors-mockups-stage__frame">
                     <img
-                      src="assets/collectors/mockups/spread-junk-journal.png"
+                      src="assets/collectors/mockups/spread-junk-journal.webp"
                       alt="Junk journal spread mockup on an orange chair"
                       width="1024"
                       height="1020"
@@ -139,7 +140,7 @@
                 >
                   <div class="collectors-mockups-stage__frame">
                     <img
-                      src="assets/collectors/mockups/back.png"
+                      src="assets/collectors/mockups/back.webp"
                       alt="Upcoming releases and editor note mockup"
                       width="985"
                       height="1024"
@@ -176,42 +177,42 @@
             <div class="collectors-mockups-slider__viewport">
               <figure class="collectors-mockups-slider__slide is-active">
                 <div class="collectors-mockups-stage__frame">
-                  <img src="assets/collectors/pages/01-cover.png" alt="Cover — Collectors Edition" loading="lazy" />
+                  <img src="assets/collectors/pages/01-cover.webp" alt="Cover — Collectors Edition" loading="lazy" />
                 </div>
               </figure>
               <figure class="collectors-mockups-slider__slide" hidden>
                 <div class="collectors-mockups-stage__frame">
-                  <img src="assets/collectors/pages/02-industry.png" alt="Industry — blind box culture" loading="lazy" />
+                  <img src="assets/collectors/pages/02-industry.webp" alt="Industry — blind box culture" loading="lazy" />
                 </div>
               </figure>
               <figure class="collectors-mockups-slider__slide" hidden>
                 <div class="collectors-mockups-stage__frame">
-                  <img src="assets/collectors/pages/03-culture.png" alt="Culture — an ode to trinkets" loading="lazy" />
+                  <img src="assets/collectors/pages/03-culture.webp" alt="Culture — an ode to trinkets" loading="lazy" />
                 </div>
               </figure>
               <figure class="collectors-mockups-slider__slide" hidden>
                 <div class="collectors-mockups-stage__frame">
-                  <img src="assets/collectors/pages/04-display.png" alt="Display — smiskis and calico critters" loading="lazy" />
+                  <img src="assets/collectors/pages/04-display.webp" alt="Display — smiskis and calico critters" loading="lazy" />
                 </div>
               </figure>
               <figure class="collectors-mockups-slider__slide" hidden>
                 <div class="collectors-mockups-stage__frame">
-                  <img src="assets/collectors/pages/05-trinket-shelves.png" alt="Trinket shelves and carabiner clips" loading="lazy" />
+                  <img src="assets/collectors/pages/05-trinket-shelves.webp" alt="Trinket shelves and carabiner clips" loading="lazy" />
                 </div>
               </figure>
               <figure class="collectors-mockups-slider__slide" hidden>
                 <div class="collectors-mockups-stage__frame">
-                  <img src="assets/collectors/pages/06-junk-cutouts.png" alt="Junk journal cutouts" loading="lazy" />
+                  <img src="assets/collectors/pages/06-junk-cutouts.webp" alt="Junk journal cutouts" loading="lazy" />
                 </div>
               </figure>
               <figure class="collectors-mockups-slider__slide" hidden>
                 <div class="collectors-mockups-stage__frame">
-                  <img src="assets/collectors/pages/07-junk-journaling.png" alt="The power and joy of junk journaling" loading="lazy" />
+                  <img src="assets/collectors/pages/07-junk-journaling.webp" alt="The power and joy of junk journaling" loading="lazy" />
                 </div>
               </figure>
               <figure class="collectors-mockups-slider__slide" hidden>
                 <div class="collectors-mockups-stage__frame">
-                  <img src="assets/collectors/pages/08-upcoming.png" alt="Upcoming releases and editor note" loading="lazy" />
+                  <img src="assets/collectors/pages/08-upcoming.webp" alt="Upcoming releases and editor note" loading="lazy" />
                 </div>
               </figure>
             </div>
@@ -230,8 +231,8 @@
       </div>
     </div>
   </main>
-  <script src="js/nav.js"></script>
-  <script src="js/main.js"></script>
-  <script src="js/collectors.js"></script>
+  <script src="js/nav.js" defer></script>
+  <script src="js/main.js" defer></script>
+  <script src="js/collectors.js" defer></script>
 </body>
 </html>
