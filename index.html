@@ -62,7 +62,10 @@
     <section id="about" class="panel panel--about">
       <div class="about">
         <figure class="about__photo about__photo--mia">
-          <img src="assets/mialittle.webp" alt="Mia Winchester" loading="lazy" decoding="async" />
+          <picture>
+            <source srcset="assets/mialittle.webp" type="image/webp" />
+            <img src="assets/mialittle.png" alt="Mia Winchester" loading="eager" decoding="async" width="900" height="674" />
+          </picture>
         </figure>
         <div class="about__text about__text--scatter">
           <h2 class="about__name">Mia Winchester</h2>
@@ -93,7 +96,10 @@
           </p>
         </div>
         <figure class="about__photo about__photo--pigeon">
-          <img src="assets/babypidgeon.webp" alt="" loading="lazy" decoding="async" />
+          <picture>
+            <source srcset="assets/babypidgeon.webp" type="image/webp" />
+            <img src="assets/babypidgeon.png" alt="" loading="eager" decoding="async" width="1400" height="1050" />
+          </picture>
         </figure>
       </div>
     </section>
