@@ -2795,13 +2795,18 @@ body.page-home .panel {
 }
 
 body.page-home .panel--about .about {
-  grid-template-columns: minmax(0, 11rem) minmax(0, 1fr) minmax(0, 11rem);
-  gap: clamp(1rem, 2.5vw, 1.75rem);
-  align-items: center;
+  grid-template-columns: minmax(140px, 200px) minmax(0, 1fr) minmax(140px, 200px);
+  gap: 1.4rem;
+  align-items: start;
 }
 
 body.page-home .panel--about .about > * {
   min-width: 0;
+}
+
+body.page-home .about__photo {
+  width: 100%;
+  max-width: 200px;
 }
 
 body.page-home .about__photo picture {
@@ -2832,27 +2837,21 @@ body.page-home .about__text--scatter .about__name {
   line-height: 1.15;
 }
 
-body.page-home .about__scatter-line {
-  margin: 0 0 0.65rem;
+body.page-home .about__tagline {
+  margin: 0 0 0.85rem;
   font-family: var(--font);
-  font-style: normal;
+  font-size: clamp(0.82rem, 2.1vw, 0.98rem);
+  line-height: 1.5;
+  color: var(--accent-olive);
+}
+
+body.page-home .about__bio {
+  margin: 0 0 0.55rem;
+  font-family: var(--font);
   font-size: clamp(0.82rem, 2.1vw, 0.98rem);
   line-height: 1.65;
   color: #111;
-  opacity: 1;
-}
-
-body.page-home .about__scatter-line span {
-  display: inline;
-  margin-right: var(--mr, 0.35em);
-}
-
-body.page-home .about__scatter-line--indent {
-  padding-left: clamp(1.5rem, 8vw, 3.5rem);
-}
-
-body.page-home .about__scatter-line:first-of-type {
-  color: var(--accent-olive);
+  max-width: 34rem;
 }
 
 body.page-home .panel--contact .panel__lede {
@@ -2865,7 +2864,11 @@ body.page-home .about__photo {
 }
 
 body.page-home .about__photo img {
-  max-height: min(22rem, 52vh);
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
 }
 
 body.page-home .about__photo--mia img {
